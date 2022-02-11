@@ -10,7 +10,7 @@
 
 @import Foundation;
 
-#import "../MTMathListDisplay.h"
+#import <MTMathListDisplay.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

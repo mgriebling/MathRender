@@ -12,10 +12,10 @@
 @import CoreText;
 
 // Compatibility of iOS and Mac OS.
-#import "MTConfig.h"
+#import "../render/MTConfig.h"
 
-#import "MTFont.h"
-#import "../lib/MTMathList.h"
+#import "../render/MTFont.h"
+#import "MTMathList.h"
 #import "MTMathListDisplay.h"
 
 /**

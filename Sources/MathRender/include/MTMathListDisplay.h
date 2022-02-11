@@ -15,10 +15,10 @@
 // This header file is imported by Foudation.
 //#include <TargetConditionals.h>
 
-#import "MTConfig.h"
+#import "../render/MTConfig.h"
 
-#import "MTFont.h"
-#import "../lib/MTMathList.h"
+#import "../render/MTFont.h"
+#import "MTMathList.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -12,7 +12,7 @@
 #import "MTMathUILabel.h"
 #import "MTMathListDisplay.h"
 #import "MTFontManager.h"
-#import "../lib/MTMathListBuilder.h"
+#import "MTMathListBuilder.h"
 #import "internal/MTTypesetter.h"
 
 @implementation MTMathUILabel {

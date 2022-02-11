@@ -8,7 +8,7 @@
 //  MIT license. See the LICENSE file for details.
 //
 
-#import "../MTMathListDisplay.h"
+#import <MTMathListDisplay.h>
 
 @interface MTDisplay ()
 

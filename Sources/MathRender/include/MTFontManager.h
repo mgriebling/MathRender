@@ -11,7 +11,7 @@
 
 @import Foundation;
 
-#import "MTFont.h"
+#import "../render/MTFont.h"
 
 /** A manager to load font files from disc and keep them
  in memory. */

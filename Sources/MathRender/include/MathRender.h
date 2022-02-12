@@ -12,3 +12,4 @@
 #import <MTMathListDisplay.h>
 #import <MTMathList.h>
 #import <MTMathListBuilder.h>
+#import <MTFontManager.h>

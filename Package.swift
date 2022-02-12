@@ -23,10 +23,10 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "MathRender",
+            dependencies: [],
             resources: [
                 .copy("MathFontBundle.bundle")
-            ],
-            dependencies: []),
+            ]),
         .testTarget(
             name: "MathRenderTests",
             dependencies: ["MathRender"]),

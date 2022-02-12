@@ -25,7 +25,7 @@ let package = Package(
             name: "MathRender",
             dependencies: [],
             resources: [
-                .copy("MathFontBundle.bundle")
+                .copy("mathFonts.bundle")
             ]),
         .testTarget(
             name: "MathRenderTests",

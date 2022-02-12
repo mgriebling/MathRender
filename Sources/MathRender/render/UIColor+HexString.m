@@ -8,7 +8,7 @@
 
 #import "UIColor+HexString.h"
 
-#if (ios)
+#if TARGET_OS_IPHONE
 
 @implementation UIColor (HexString)
 

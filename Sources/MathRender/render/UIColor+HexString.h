@@ -6,7 +6,9 @@
 //
 //
 
-#if (ios)
+#include <TargetConditionals.h>
+
+#if TARGET_OS_IPHONE
 
 @interface UIColor (HexString)
 

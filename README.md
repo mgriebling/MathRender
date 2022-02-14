@@ -23,6 +23,8 @@ Here are screenshots of some formulae that were rendered with this library:
 ![AM-GM](img/amgm.png)
 
 ![Ramanujan Identity](img/ramanujan.png)
+
+More examples are included in [EXAMPLES](EXAMPLES.md)
  
 ## Requirements
 `MathRender` works on iOS 6+ or MacOS 10.8+ and requires ARC to build. It depends
@@ -117,7 +119,7 @@ This is a list of formula types that the library currently supports:
 ### Example
 
 The [MathRenderDemo](https://github.com/mgriebling/MathRenderDemo) is a Swift version
-of the demo included in `iosMath` that uses `MathRender` as a Swift package dependency.
+of the Objective-C demo included in `iosMath` that uses `MathRender` as a Swift package dependency.
 
 ### Advanced configuration
 
@@ -221,8 +223,8 @@ file for more info.
 This distribution contains the following fonts. These fonts are
 licensed as follows:
 * Latin Modern Math: 
-    [GUST Font License](./fonts/GUST-FONT-LICENSE.txt)
+    [GUST Font License](GUST-FONT-LICENSE.txt)
 * Tex Gyre Termes:
-    [GUST Font License](./fonts/GUST-FONT-LICENSE.txt)
+    [GUST Font License](GUST-FONT-LICENSE.txt)
 * [XITS Math](https://github.com/khaledhosny/xits-math):
-    [Open Font License](./fonts/OFL.txt)
+    [Open Font License](OFL.txt)

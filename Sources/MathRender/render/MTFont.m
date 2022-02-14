@@ -69,12 +69,10 @@
 
 + (NSBundle*) fontBundle
 {
-    // Uses bundle for class so that this can be access by the unit tests.
-//    return [NSBundle bundleWithURL:[[NSBundle bundleForClass:[self class]] URLForResource:@"mathFonts" withExtension:@"bundle"]];
+    // Uses bundle for class so that this can be accessed by the unit tests.
+    // Modified 14 Feb 2022 to work with SPM that encapsulates the font bundle.
     NSURL *url = [[NSBundle mainBundle] URLForResource:@"MathRender_MathRender" withExtension:@"bundle"];
     url = [[NSBundle bundleWithURL:url] URLForResource:@"mathFonts" withExtension:@"bundle"];
-//    let bundle = Bundle.main.url(forResource: "MathRender_MathRender", withExtension: "bundle")! //(forResource: "MathRender_MathRender", withExtension: "bundle")
-//    let fontBundle = Bundle(url: bundle)!.url(forResource: "mathFonts", withExtension: "bundle")
     return [NSBundle bundleWithURL:url];
 }
 

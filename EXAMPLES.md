@@ -1,4 +1,4 @@
-# iosMath Examples
+# MathRender Examples
 
 ## Square of sums
 ```LaTeX

@@ -71,8 +71,11 @@
 {
     // Uses bundle for class so that this can be access by the unit tests.
 //    return [NSBundle bundleWithURL:[[NSBundle bundleForClass:[self class]] URLForResource:@"mathFonts" withExtension:@"bundle"]];
-    NSBundle *cover = [NSBundle bundleWithIdentifier:@"MathRender_MathRender"];
-    return [NSBundle bundleWithIdentifier:@"mathFonts"];
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"MathRender_MathRender" withExtension:@"bundle"];
+    url = [[NSBundle bundleWithURL:url] URLForResource:@"mathFonts" withExtension:@"bundle"];
+//    let bundle = Bundle.main.url(forResource: "MathRender_MathRender", withExtension: "bundle")! //(forResource: "MathRender_MathRender", withExtension: "bundle")
+//    let fontBundle = Bundle(url: bundle)!.url(forResource: "mathFonts", withExtension: "bundle")
+    return [NSBundle bundleWithURL:url];
 }
 
 - (MTFont *)copyFontWithSize:(CGFloat)size

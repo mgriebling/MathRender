@@ -71,6 +71,7 @@
 {
     // Uses bundle for class so that this can be access by the unit tests.
 //    return [NSBundle bundleWithURL:[[NSBundle bundleForClass:[self class]] URLForResource:@"mathFonts" withExtension:@"bundle"]];
+    NSBundle *cover = [NSBundle bundleWithIdentifier:@"MathRender_MathRender"];
     return [NSBundle bundleWithIdentifier:@"mathFonts"];
 }
 

@@ -71,7 +71,7 @@
 {
     // Uses bundle for class so that this can be access by the unit tests.
 //    return [NSBundle bundleWithURL:[[NSBundle bundleForClass:[self class]] URLForResource:@"mathFonts" withExtension:@"bundle"]];
-    return [NSBundle bundleWithIdentifier:"mathFonts"]
+    return [NSBundle bundleWithIdentifier:"mathFonts"];
 }
 
 - (MTFont *)copyFontWithSize:(CGFloat)size

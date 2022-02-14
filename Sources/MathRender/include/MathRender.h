@@ -13,3 +13,4 @@
 #import <MTMathList.h>
 #import <MTMathListBuilder.h>
 #import <MTFontManager.h>
+#import <MTMathAtomFactory.h>

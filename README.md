@@ -175,12 +175,10 @@ You can define your own commands that are not already predefined. This is
 similar to macros is LaTeX. To define your own command use:
 
 ```swift
-
-[MTMathAtomFactory addLatexSymbol:@"lcm"
-                            value:[MTMathAtomFactory operatorWithName:@"lcm" limits:NO]];
+MTMathAtomFactory.addLatexSymbol("lcm", value: MTMathAtomFactory.operator(withName: "lcm", limits: false))
 ```
 
-This creates a `\lcm` command that can be used in the LaTeX.
+This creates an `\lcm` command that can be used in the LaTeX.
 
 ##### Content Insets
 The `MTMathUILabel` has `contentInsets` for finer control of placement of the
@@ -188,8 +186,8 @@ equation in relation to the view.
 
 If you need to set it you can do as follows:
 
-```objective-c
-label.contentInsets = UIEdgeInsetsMake(0, 10, 0, 20);
+```swift
+label.contentInsets = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 20)
 ```
 
 ##### Error handling
@@ -201,8 +199,8 @@ an error message will be displayed instead of the label.
 This error can be programmatically retrieved as `label.error`. If you
 prefer not to display anything then set:
 
-```objective-c
-label.displayErrorInline = NO;
+```swift
+label.displayErrorInline = true
 ```
 
 ## Future Enhancements
@@ -214,19 +212,9 @@ updates. This includes:
 * Support for explicit big delimiters (bigl, bigr etc.)
 * Addition of missing plain TeX commands 
 
-## Related Projects
-
-For people looking for things beyond just rendering math, there are two
-related projects:
-
-* [MathEditor](https://github.com/kostub/MathEditor): A WYSIWYG editor
-  for math equations on iOS.
-* [MathSolver](https://github.com/kostub/MathSolver): A library for
-  solving math equations.
-
 ## License
 
-iosMath is available under the MIT license. See the [LICENSE](./LICENSE)
+`MathRender` is available under the MIT license. See the [LICENSE](./LICENSE)
 file for more info.
 
 ### Fonts

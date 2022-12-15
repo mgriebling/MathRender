@@ -92,6 +92,33 @@ struct MathView: UIViewRepresentable {
 }
 ```
 
+If you need code that works with SwiftUI running natively under MacOS you'll need the following:
+
+```swift
+import SwiftUI
+import MathRender
+
+struct MathView: NSViewRepresentable {
+    
+    @Binding var equation: String
+    @Binding var fontSize: CGFloat
+    
+    func makeNSView(context: Context) -> MTMathUILabel {
+        let view = MTMathUILabel()
+        return view
+    }
+    
+    func updateNSView(_ view: MTMathUILabel, context: Context) {
+        view.latex = equation
+        view.fontSize = fontSize
+        view.font = MTFontManager().termesFont(withSize: fontSize)
+        view.textColor = .textColor
+        view.textAlignment = .center
+        view.labelMode = .display
+    }
+}
+```
+
 ### Included Features
 This is a list of formula types that the library currently supports:
 

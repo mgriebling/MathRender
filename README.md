@@ -160,7 +160,7 @@ or `\(` in LaTeX). The default style is Display. To switch to Text
 simply:
 
 ```swift
-label.labelMode = .label
+label.labelMode = .text
 ```
 
 ##### Text Alignment

@@ -13,7 +13,7 @@
 #import "MTMathListDisplay.h"
 #import "MTFontManager.h"
 #import "MTMathListBuilder.h"
-#import "internal/MTTypesetter.h"
+#import "MTTypesetter.h"
 
 @implementation MTMathUILabel {
     MTLabel* _errorLabel;
